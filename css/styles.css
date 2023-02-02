@@ -2186,6 +2186,7 @@ progress {
   color: #6c757d;
 }
 
+
 .form-control {
   display: block;
   width: 100%;
@@ -2737,16 +2738,17 @@ textarea.form-control-lg {
 .input-group {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  padding-left: 40%;
 }
 .input-group > .form-control,
 .input-group > .form-select {
-  position: relative;
+  position: absolute;
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
+  transform: translate(-50%, -50%);
 }
 .input-group > .form-control:focus,
 .input-group > .form-select:focus {
