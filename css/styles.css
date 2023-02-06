@@ -2509,6 +2509,8 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
 }
+
+
 @media (prefers-reduced-motion: reduce) {
   .form-select {
     transition: none;
@@ -2612,6 +2614,10 @@ textarea.form-control-lg {
 .form-check-input[disabled] ~ .form-check-label,
 .form-check-input:disabled ~ .form-check-label {
   opacity: 0.5;
+}
+
+.form-outline{
+  width:50%;
 }
 
 .form-switch {
@@ -2828,9 +2834,10 @@ textarea.form-control-lg {
 .input-group {
   position: relative;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-left: 40%;
+  margin-bottom: 10%;
 }
 .input-group > .form-control,
 .input-group > .form-select {
@@ -4829,8 +4836,10 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  width: 20%;
+  height:10%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 .card > hr {
   margin-right: 0;
@@ -4979,6 +4988,9 @@ fieldset:disabled .btn {
   }
 }
 
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 .accordion-button {
   position: relative;
   display: flex;
@@ -7397,6 +7409,11 @@ fieldset:disabled .btn {
 .flex-container{
   display:flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  gap: 1%;
 }
 .flex-fill {
   flex: 1 1 auto !important;
@@ -8109,7 +8126,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-body-color), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -11830,29 +11847,27 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-color: var(--cb-black-background);
+  /* background-image: url("../assets/img/Hero-image.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Manrope', sans-serif;
+  color:var(--cb-cinibun-orange);
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Manrope', sans-serif;
+  color:var(--cb-orange-secondary);
 }
 
 @media (min-width: 768px) {
@@ -11862,7 +11877,6 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
-    font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
@@ -12229,4 +12243,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.category-btn{
+  width: 20%;
+  text-align: center;
 }
