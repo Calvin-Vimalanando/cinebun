@@ -20,15 +20,19 @@
   --cb-orange-primary-text: #ff4aca;
   --cb-orange-secondary: #ff8b48;
   --cb-rotten-tomato-red: #f93100;
-  --cb-active-icon-gradiant-radial: radial-gradient(
-    rgb(255, 74, 204) 0%,
-    rgb(248, 107, 141) 19%,
-    rgb(255, 156, 82) 78%,
-    rgb(247, 214, 87) 100%
-  );
-    --cb-inactive-icon-gradiant-radial: radial-gradient(
+  --cb-active-icon-gradient-radial: radial-gradient(rgb(255, 129, 72) 0%, rgb(255, 74, 192) 50%, rgb(235, 202, 87) 100%);
+  --cb-inactive-icon-gradient-radial: radial-gradient(rgb(75, 76, 121) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
 
-  );
+  --cb-blue-gradient-linear: linear-gradient(40deg, rgb(117, 223, 230) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+  --cb-pink-gradient-linear: linear-gradient(40deg, rgb(255, 74, 190) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+  --cb-orange-gradient-linear: linear-gradient(40deg, rgb(255, 129, 72) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+  --cb-blue-gradient-linear:  linear-gradient(40deg, rgb(91, 103, 255) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+  --cb-purple-gradient-linear: linear-gradient(40deg, rgb(185, 128, 255) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+  --cb-green-gradient-linear: linear-gradient(40deg, rgb(137, 218, 196) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+ --cb-yellow-gradient-linear: linear-gradient(40deg, rgb(234, 201, 86) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+ --cb-fuchsia-gradient-linear: linear-gradient(40deg, rgb(255, 144, 255) 0%, rgb(42, 46, 71) 50%, rgb(18, 21, 35) 100%);
+ --cb-unicorn-gradient-linear: linear-gradient(40deg, rgb(255, 144, 255) 0%, rgb(117, 223, 230) 33%, rgb(92, 102, 255) 66%, rgb(187, 128, 255) 100%);
+
   --cb-radius-search-bar: 30px;
   --cb-radius-button: 20px;
   --cb-font-micro-copy:  font-family: 'Inter', sans-serif;
@@ -112,7 +116,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: var(--cb-font-main);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -146,11 +150,11 @@ h3,
 h2,
 .h2,
 h1,
-.h1 {
+.h1 , button{
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
+  font-family: var(--cb-font-main)
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -310,7 +314,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--cb-font-main);
   font-size: 1em;
   direction: ltr /* rtl:ignore */;
   unicode-bidi: bidi-override;
@@ -8002,7 +8006,7 @@ fieldset:disabled .btn {
 }
 
 .font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+  font-family: var(--cb-font-main) !important;
 }
 
 .fs-1 {
