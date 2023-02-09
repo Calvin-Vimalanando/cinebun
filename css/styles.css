@@ -3206,8 +3206,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-image: var(--cb-inactive-icon-gradient-radial);
+  border-color: var(--cb-black-card);
 }
 .btn-primary:hover {
   color: #fff;
@@ -11760,7 +11760,8 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 1rem 0;
+  background-image:var(--cb-inactive-icon-gradient-radial);
 }
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
@@ -11882,7 +11883,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-color: var(--cb-black-background);
+  background-image:var(--cb-inactive-icon-gradient-radial);
   /* background-image: url("../assets/img/Hero-image.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12311,4 +12312,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 .metadata{
   display: flex;
   flex-direction: row;
+}
+
+.active{
+  background-image: var(--cb-active-icon-gradient-radial);
 }
