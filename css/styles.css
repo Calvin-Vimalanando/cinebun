@@ -12285,6 +12285,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 20%;
   text-align: center;
   margin-bottom: 1%;
+  border-radius: 20px;
+  bac: var(--cb-active-icon-gradient-radial);
 }
 
 .movie-card{
