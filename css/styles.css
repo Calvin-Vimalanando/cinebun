@@ -4869,12 +4869,13 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: var(--cb-black-card);
   background-clip: border-box;
   width: 20%;
   height:10%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  margin-bottom: 1rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4900,11 +4901,13 @@ fieldset:disabled .btn {
 }
 
 .card-body {
+  color:#fff;
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
 
 .card-title {
+  color:#fff;
   margin-bottom: 0.5rem;
 }
 
